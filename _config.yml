@@ -1,16 +1,16 @@
-name: "Doohicky"
-description: "a site about nothing"
+name: "Marbled Fabrics & Accessories"
+description: "by Marjorie Lee Bevis"
 signature: "Yours truly, Grizzly Bear"
 pygments: true
 permalink: pretty
 markdown: redcarpet
 github:
   # enables "edit" link
-  repo: 'GRIZZLYBEAR/GRIZZLYBEAR.github.io'
+  repo: 'marbledfabrics/marbledfabrics.github.io'
   branch: master
 prose:
-  siteurl: 'http://GRIZZLYBEAR.github.io'
-  relativeLinks: 'http://GRIZZLYBEAR.github.io/links.jsonp'
+  siteurl: 'http://marbledfabrics.github.io'
+  relativeLinks: 'http://marbledfabrics.github.io/links.jsonp'
   # uncomment to limit editing to the _posts directory
   #rooturl: '_posts'
   media: 'media'
