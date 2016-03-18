@@ -1,6 +1,7 @@
 name: "Marbled Fabrics & Accessories"
 description: "by Marjorie Lee Bevis"
-permalink: pretty
+copyright: "©️ 2016 Marjorie Lee Bevis"
+Permalink: Pretty
 markdown: kramdown
 github:
   # enables "edit" link

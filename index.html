@@ -3,26 +3,32 @@ layout: default
 title: Marbled Fabrics & Accessories
 ---
 
-<div id="home" class="row">
-  <div class="col-sm-9">
-    <div class="list-group posts">
-    {% for post in site.posts %}
-      <a href="{{ post.url }}" class="list-group-item">
-        <h4 class="list-group-item-heading">{{ post.title }}<small class="pull-right">{{ post.date | date_to_string }}</small></h4>
-      {% if post.description %}
-        <p class="list-group-item-text">{{ post.description }}</p>
-      {% endif %}
-      </a>
-    {% endfor %}
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="list-group posts">
-    {% for post in site.pages %}{% if post.url != page.url and post.title != null %}
-      <a href="{{ post.url }}" title="{{ post.description }}" class="list-group-item">
-        {{ post.title }}
-      </a>
-    {% endif %}{% endfor %}
-    </div>
-  </div>
-</div>
+<div class="album text-muted">
+            <div class="container">
+
+                <div class="row">
+                    {% for post in site.posts %}
+                    <div class="card">
+                        <a href="{{ post.url }}">
+                            <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">{{ post.title }}</h4>
+                                {% if post.description %}
+                                <p class="card-text">{{ post.description }}</p>
+                                {% endif %}
+                                {% if post.date %}
+                                <p class="card-date">{{ post.date | date_to_string }}</p>
+                                {% endif %}
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                    {% for post in site.pages %}{% if post.url != page.url and post.title != null %}
+                    <a href="{{ post.url }}" title="{{ post.description }}" class="list-group-item">
+                        {{ post.title }}
+                    </a>
+                    {% endif %}{% endfor %}
+                </div>
+
+            </div>
+        </div>
