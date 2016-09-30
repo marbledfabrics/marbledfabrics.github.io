@@ -1,3 +1,10 @@
-$enable-rounded: false;
+$color: red;
 
-@import 'bootstrap.scss';
+p {
+  color: blue;
+}
+
+/* Navbar  */
+.nav {
+  float: right;
+}
