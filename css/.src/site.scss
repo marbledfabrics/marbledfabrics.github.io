@@ -1,8 +1,14 @@
 $color: red;
 
-p {
-  color: blue;
+.container-fluid {
+  max-width: 960px;
 }
+
+/* footer */
+  footer {
+    width: 100%;
+    background-color: black;
+  }
 
 /* Navbar  */
 .nav {

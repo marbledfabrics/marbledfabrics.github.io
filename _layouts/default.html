@@ -2,27 +2,28 @@
 layout: bootstrap
 ---
 
-{% include header.html %}
 
-<section class="jumbotron text-xs-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">{{ page.title }}</h1>
-        <p class="lead text-muted">{{ page.description }}</p>
-        {% if page.date %}<p class="date">{{ page.date | date_to_string }}</p>{% endif %}
-    </div>
-</section>
+<div class="container-fluid">
+    {% include header.html %}
+    <header>
+      <h1 class="jumbotron-heading">{{ page.title }}</h1>
+      <p>Header image here</p>
+    </header>
+    <div class="row">
+      <sidebar class="col-md-2">
+          <p>side bar</p>    
+      </sidebar>
+      <section class="col-md-8">
+        {{ content }}
+      </section>
+      <aside class="col-md-2">
+        <p>Marjorie has been creating unique marbled cottons and silks since 1986. She began marbling fabric for quilts, but soon became so busy producing fabric for others that she had little time for quilting. In 1994, Marjorie began to sell fabric wholesale to quilt shops and designers.</p>
 
-<div>
-    <p>side bar</p>    
+        <p>Through this website you can order custom fabrics directly from Marjorie. The images on these pages are just a small sampling of the range of colors and patterns which are available. If you have a specific request in mind, please describe it in the "Special Instructions" field when you place your order.</p>
+      </aside>
+    </div> <!-- row -->
 
-</div>
 
-{{ content }}
 
-<footer class="text-muted">
-    <div class="container">
-        <p>{{ if site.copyright }}<span class="copyright">{{ site.copyright }}</span>{{ endif }}
-            {% if page.path and site.github.repo and site.github.branch %}<a class="edit-page" href="http://prose.io/#{{ site.github.repo }}/edit/{{ site.github.branch }}/{{ page.path }}">✐</a>{% endif %}
-        </p>
-    </div>
-</footer>
+</div> <!-- container-fluid -->  
+{% include footer.html %}
