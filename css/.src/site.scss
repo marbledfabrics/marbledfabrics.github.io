@@ -1,8 +1,40 @@
-$color: red;
+body {
+  background: #292929;
+  color: #F0F0F0;
+}
 
 .container-fluid {
   max-width: 960px;
 }
+
+/* fonts */
+
+
+
+/* Header */
+
+header {
+  background: url('../img/fabric-full.jpg') no-repeat;
+  background-clip: content-box !important;
+}
+
+
+/*.header h1 {
+  z-index: 10;
+  color: black;
+  position: absolute;
+  top: 1%;
+  font-size: 2.1em;
+  font-family: Myriad Pro, Myriad Web Pro Regular, Lucida Grande, Geneva, Trebuchet MS, sans-serif;
+}*/
+
+.fabric-header {
+ position: relative;
+ top: -7px;
+}
+
+
+
 
 /* footer */
   footer {

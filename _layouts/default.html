@@ -5,10 +5,15 @@ layout: bootstrap
 
 <div class="container-fluid">
     {% include header.html %}
-    <header>
-      <h1 class="jumbotron-heading">{{ page.title }}</h1>
-      <p>Header image here</p>
-    </header>
+    <div class="row">
+      <header class="col-md-12 header">
+        <h1>{{site.name}}</h1>
+        <!-- <img src="/img/header.png" class="img-responsive"> -->
+       <!--  {% if page.url == '/' %}
+        <img src="/img/fabric-full.jpg" class="img-responsive fabric-header">
+        {% endif %} -->
+      </header>
+    </div>
     <div class="row">
       <sidebar class="col-md-2">
           <p>side bar</p>    
