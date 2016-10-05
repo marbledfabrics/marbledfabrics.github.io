@@ -13,31 +13,28 @@ body {
 
 /* Header */
 
-.fabric-header {
-  background: url('../img/fabric-full.jpg') no-repeat;
-  background-clip: content-box !important;
-  height: 420px;
+header {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
 }
 
-.title {
-   background: url('../img/header.png') no-repeat;
-   background-clip: content-box;
-}
-
-
-/*.header h1 {
-  z-index: 10;
+header h1 {
   color: black;
-  position: absolute;
-  top: 1%;
   font-size: 2.1em;
   font-family: Myriad Pro, Myriad Web Pro Regular, Lucida Grande, Geneva, Trebuchet MS, sans-serif;
-}*/
-
-.fabric-header {
- position: relative;
- top: -7px;
+  position: absolute;
+  z-index: 10;
+  top: 2px;
 }
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
 
 
 

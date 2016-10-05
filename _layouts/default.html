@@ -6,19 +6,12 @@ layout: bootstrap
 <div class="container-fluid">
     {% include header.html %}
     <div class="row">
-      <header class="col-md-12 header">
-        <div class="row">
-          <div class="col-md-12 title">
-            <h1>{{site.name}}</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 fabric-header">
+      <header>
+        <h1><a href="/">{{site.name}}</a></h1>
+        <img src="../img/header-full.png" class="img-responsive">
 
-          </div>
-        </div>
-        <!-- <img src="/img/header.png" class="img-responsive"> -->
-       <!--  {% if page.url == '/' %}
+        <!-- Logic here for header image if not main page <img src="/img/header.png" class="img-responsive"> 
+         {% if page.url == '/' %}
         <img src="/img/fabric-full.jpg" class="img-responsive fabric-header">
         {% endif %} -->
       </header>
