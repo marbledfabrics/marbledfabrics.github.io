@@ -1,8 +1,43 @@
-$color: red;
+body {
+  background: #292929;
+  color: #F0F0F0;
+}
 
 .container-fluid {
   max-width: 960px;
 }
+
+/* fonts */
+
+
+
+/* Header */
+
+header {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+header h1 {
+  color: black;
+  font-size: 2.1em;
+  font-family: Myriad Pro, Myriad Web Pro Regular, Lucida Grande, Geneva, Trebuchet MS, sans-serif;
+  position: absolute;
+  z-index: 10;
+  top: 2px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
 
 /* footer */
   footer {
