@@ -1,46 +1,35 @@
 ---
 layout: bootstrap
 ---
-<div class="navbar-collapse collapse inverse" id="navbar-header">
-    <div class="container-fluid">
-        <div class="about">
-            <h4>About</h4>
-            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="social">
-            <h4>Contact</h4>
-            <ul class="list-unstyled">
-                <li><a href="#">Follow on Twitter</a></li>
-                <li><a href="#">Like on Facebook</a></li>
-                <li><a href="#">Email me</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
 
-<div class="navbar navbar-static-top navbar-dark bg-inverse">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">
-            &#9776;
-        </button>
-        <a href="/" class="navbar-brand">{{ site.name }}</a>
-    </div>
-</div>
 
-<section class="jumbotron text-xs-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">{{ page.title }}</h1>
-        <p class="lead text-muted">{{ page.description }}</p>
-        {% if page.date %}<p class="date">{{ page.date | date_to_string }}</p>{% endif %}
-    </div>
-</section>
+<div class="container-fluid">
+    {% include header.html %}
+    <div class="row">
+      <header>
+        <h1><a href="/">{{site.name}}</a></h1>
+        <img src="../img/header-full.png" class="img-responsive">
 
-{{ content }}
-
-<footer class="text-muted">
-    <div class="container">
-        <p>{{ if site.copyright }}<span class="copyright">{{ site.copyright }}</span>{{ endif }}
-            {% if page.path and site.github.repo and site.github.branch %}<a class="edit-page" href="http://prose.io/#{{ site.github.repo }}/edit/{{ site.github.branch }}/{{ page.path }}">✐</a>{% endif %}
-        </p>
+        <!-- Logic here for header image if not main page <img src="/img/header.png" class="img-responsive"> 
+         {% if page.url == '/' %}
+        <img src="/img/fabric-full.jpg" class="img-responsive fabric-header">
+        {% endif %} -->
+      </header>
     </div>
-</footer>
+    <div class="row">
+      <aside class="col-md-3">
+          <h2>Catalog</h2>
+          <ul>
+          <li><a href="#">Cotton Fabrics</a></li>
+          <li><a href="#">Silk Fabrics</a></li>
+          <li><a href="#">Cotton Variety Pack</a></li>
+          <li><a href="#">Accessories</a></li>    
+          </ul>
+      </aside>
+      {{content}}
+    </div> <!-- row -->
+
+
+
+</div> <!-- container-fluid -->  
+{% include footer.html %}

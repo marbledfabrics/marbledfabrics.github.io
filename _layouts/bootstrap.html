@@ -2,22 +2,8 @@
 layout: bootstrap
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="/media/icon.ico">
+{% include head.html %}
 
-        <title>{{ page.title }}</title>
-
-        <!-- Site CSS -->
-        <link rel="stylesheet" href="/css/site.css">
-        <link rel="stylesheet" href="//v4-alpha.getbootstrap.com/examples/album/album.css">
-    </head>
     <body>
 
         {{ content }}
@@ -25,17 +11,10 @@ layout: bootstrap
         <!-- Bootstrap core JavaScript
              ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.9.3/holder.min.js"></script>
-        <script>
-         $(function () {
-             Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
-         });
-        </script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="//getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
 
     </body>
 </html>

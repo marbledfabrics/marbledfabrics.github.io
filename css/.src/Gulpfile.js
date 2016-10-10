@@ -5,9 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles', function() {
   gulp.src('./site.scss')
-    .pipe(sass({
-      includePaths: './node_modules/bootstrap/scss/'
-    }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
 			browsers: [
         "Android 2.3",
@@ -22,7 +20,7 @@ gulp.task('styles', function() {
 			cascade: false
 		}))
     .pipe(cleanCSS({compatibility: 'ie9'}))
-    .pipe(gulp.dest('../'))
+    .pipe(gulp.dest('../'));
 });
 
 gulp.task('watch',function() {

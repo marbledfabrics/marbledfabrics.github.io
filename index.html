@@ -3,32 +3,36 @@ layout: default
 title: Marbled Fabrics & Accessories
 ---
 
-<div class="album text-muted">
-    <div class="container">
 
-        <div class="row">
-            {% for post in site.posts %}
-            <div class="card">
-                <a href="{{ post.url }}">
-                    <img data-src="holder.js/100px280/thumb" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">{{ post.title }}</h4>
-                        {% if post.description %}
-                        <p class="card-text">{{ post.description }}</p>
-                        {% endif %}
-                        {% if post.date %}
-                        <p class="card-date">{{ post.date | date_to_string }}</p>
-                        {% endif %}
-                    </div>
-                </a>
-            </div>
-            {% endfor %}
-            {% for post in site.pages %}{% if post.url != page.url and post.title != null %}
-            <a href="{{ post.url }}" title="{{ post.description }}" class="list-group-item">
-                {{ post.title }}
-            </a>
-            {% endif %}{% endfor %}
-        </div>
-
+<section class="col-md-6 catalog">
+  <h1>Catalog</h1>
+  <div class="row">
+    <div class="col-md-6 col-sm-3 col-xs-6">
+      <img src="../img/fabrics/cotton/green-med.jpg" class="img-responsive">
+      <p>Cotton Fabrics</p>
     </div>
-</div>
+    <div class="col-md-6 col-sm-3 col-xs-6">
+      <img src="../img/fabrics/silk/red-med.png" class="img-responsive">
+      <p>Silk Fabrics</p>
+    </div>
+  
+    <div class="col-md-6 col-sm-3 col-xs-6">
+      <img src="../img/fabrics/variety-packs/rainbow-stones.png" class="img-responsive">
+      <p>Cotton Variety Packs</p>
+    </div>
+    <div class="col-md-6 col-sm-3 col-xs-6">
+      <img src="../img/fabrics/accessories/silk-accessories.png" class="img-responsive">
+      <p>Accessories</p>
+    </div>
+  </div>
+</section>
+<aside class="col-md-3">
+  <p>Marjorie has been creating unique marbled cottons and silks since 1986. She began marbling fabric for quilts, but soon became so busy producing fabric for others that she had little time for quilting. In 1994, Marjorie began to sell fabric wholesale to quilt shops and designers.</p>
+
+  <p>Through this website you can order custom fabrics directly from Marjorie. The images on these pages are just a small sampling of the range of colors and patterns which are available. If you have a specific request in mind, please describe it in the "Special Instructions" field when you place your order.</p>
+</aside>
+
+
+        
+
+  
