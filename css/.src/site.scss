@@ -103,6 +103,10 @@ h1 a {
   }
 
 /* Navbar  */
+.navbar {
+  margin-bottom: 6px;
+}
+
 .nav {
   float: right;
 }
@@ -114,7 +118,7 @@ h1 a {
 
 .navbar-default li {
   font-size: 1.1428em;
-  margin: 10px;
+  margin: 10px 10px 5px 10px !important;
 }
 
 .nav a {
