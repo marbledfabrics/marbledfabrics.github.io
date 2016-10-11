@@ -4,4 +4,5 @@ copyright: "©️ 2016 Marjorie Lee Bevis"
 Permalink: Pretty
 markdown: kramdown
 include: ['_pages']
+exclude: ['Proposal.md', 'README.md']
 

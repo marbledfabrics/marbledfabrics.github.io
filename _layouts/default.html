@@ -7,13 +7,15 @@ layout: bootstrap
     {% include header.html %}
     <div class="row">
       <header>
-        <h1><a href="/">{{site.name}}</a></h1>
-        <img src="../img/header-full.png" class="img-responsive">
+        <h1><a href="index.html">{{site.name}}</a></h1>
 
-        <!-- Logic here for header image if not main page <img src="/img/header.png" class="img-responsive"> 
-         {% if page.url == '/' %}
-        <img src="/img/fabric-full.jpg" class="img-responsive fabric-header">
-        {% endif %} -->
+        <!-- Logic here for header image if not main page -->
+         {% if page.url == '/index.html' %}
+         <img src="img/header-full.png" class="img-responsive">
+
+        {% else %}
+        <img src="img/header.png" class="img-responsive">
+        {% endif %} 
       </header>
     </div>
     <div class="row">
