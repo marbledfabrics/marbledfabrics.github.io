@@ -21,7 +21,7 @@ h1 {
   font-size: 1.8em;
 }
 
-h1, h2, .catalog p {
+h1, h2 {
   color: #DFB579;
 }
 
@@ -141,12 +141,13 @@ h1 a {
   text-align: center;
 }
 
-.catalog .img-responsive {
-  margin: 0 auto;
+.catalog .row p {
+  color: #DFB579;
+  font-weight: bold;
 }
 
-.catalog p:first-of-type {
-  font-weight: bold;
+.catalog .img-responsive {
+  margin: 0 auto;
 }
 
 
