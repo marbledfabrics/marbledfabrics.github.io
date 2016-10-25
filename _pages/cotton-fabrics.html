@@ -2,6 +2,38 @@
 layout: default
 title: Cotton Fabrics
 permalink: cotton-fabrics.html
+images:
+  - image_path: img/fabrics/colors/blue-cat_LRG_0.jpg
+    title: Blues and Teals
+  - image_path: img/fabrics/colors/earthtones-cat_LRG_0.jpg
+    title: Earthtones
+  - image_path: img/fabrics/colors/fuchsia-cat_LRG_0.jpg 
+    title: Fuschias
+  - image_path: img/fabrics/colors/grey-cat_LRG_0.jpg
+    title: Greys and Blacks
+  - image_path: img/fabrics/colors/green-cat_LRG_0.jpg 
+    title: Greens
+  - image_path: img/fabrics/colors/orange-cat_LRG_0.jpg
+    title: Oranges
+  - image_path: img/fabrics/colors/purple-cat_LRG_0.jpg 
+    title: Purples
+  - image_path: img/fabrics/colors/red-cat_LRG_0.jpg 
+    title: Reds
+  - image_path: img/fabrics/colors/yellow-cat_LRG_0.jpg 
+    title: Yellows
 ---
 
-{% include fabrics.html %}
+<section class="col-md-9 catalog">
+  <h1>{{page.title}}</h1>
+  <img src="img/fabrics/cotton/green-small.jpg" class="pull-left">
+  <p>I use 100% cotton. My dyeing and cleaning process ensures that the fabric is pre-shrunk and washable. I suggest washing the fabric by hand using mild soap or machine washing it on a gentle cycle. If you plan to use any fabric with dark background in a quilt or garment with light fabrics, always rinse first until water runs clear. Dry fabric in the dryer, and iron the reverse side on medium heat.</p>
+
+  <div class="row">
+    {% for image in page.images %}
+      <div class="col-md-4 col-sm-3 col-xs-6">
+        <img src="{{image.image_path}}" class="img-responsive" alt="{{image.title}}">
+        <p>{{image.title}}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
