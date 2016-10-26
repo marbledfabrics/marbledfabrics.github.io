@@ -23,15 +23,17 @@ h1 {
 
 h1, h2 {
   color: #DFB579;
-}
-
-h1, h2 {
   font-family: "Arial Narrow", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
 p {
   font-size: 1em;
+}
+
+/* Links */
+a:visited {
+  text-decoration: none;
 }
 
 /* sidebar */
@@ -144,6 +146,17 @@ h1 a {
 .catalog .row p {
   color: #DFB579;
   font-weight: bold;
+}
+
+.catalog .row a {
+  color: #DFB579;
+  font-weight: bold;
+}
+
+.catalog .row a:nth-child(3) {
+  font-weight: normal;
+  display: block;
+  font-size: 12px;
 }
 
 .catalog .img-responsive {
