@@ -2,8 +2,23 @@
 layout: otherPages
 title: A Glimpse into Marjorie's Marbling Process
 permalink: technique.html
+images: 
+  - image_path: /img/technique/technique1-thumb.jpg
+  - image_path: /img/technique/technique2-thumb.jpg
+  - image_path: /img/technique/technique3-thumb.jpg
+  - image_path: /img/technique/technique4-thumb.jpg
+  - image_path: /img/technique/technique5-thumb.jpg
+  - image_path: /img/technique/technique6-thumb.jpg
 ---
 
 <p>Marjorie's exquisite artistry begins when she selects only 100% cotton and silk fabrics. Each piece of cloth is hand-dyed with Procion Fiber Reactive Dye to provide the initial background color. The fabrics are then soaked in fixatives to ensure the marbled colors and dyes will bond permanently to the fibers.</p>
 
 <p>Marjorie next applies a variety of acrylic paints to the surface of specially treated and thickened water. Swirls of color and delicate shapes appear as she gently moves the paint into dazzling patterns with a variety of tools. When fully satisfied with a completed design, Marjorie gently floats the fabric onto the paint mixture. Contact with the paint immediately transfers the design to the fabric. Though the process is labor intensive, the excitement of seeing lavish colors and elegant shapes provides "instant gratification", keeping Marjorie marbling 6-9 hours per day.</p>
+
+<div class="row technique">
+  {% for image in page.images %}
+  <div class="col-md-4 col-sm-3 col-xs-6">
+    <img src="{{image.image_path}}" class="img-responsive">
+  </div>
+  {% endfor %}
+</div>
