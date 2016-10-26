@@ -1,0 +1,26 @@
+---
+layout: default
+title: Accessories
+permalink: accessories.html
+images: 
+  - image_path: img/accessories/red_scarf_LRG.jpg 
+    title: Red Scarf
+  - image_path: img/accessories/silk_tie.jpg 
+    title: Silk Tie
+---
+
+<section class="col-md-9 product-overview">
+  <h1>{{page.title}}</h1>
+  <img src="img/accessories/silk_accessories_cat_blk.jpg" class="pull-left">
+  <p>My beautiful marbled silk ties and exquisite marbled silk scarves are a unique addition to any wardrobe.</p>
+  
+  <div class="row">
+    <!-- Loops through images -->
+    {% for image in page.images %}
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <img src="{{image.image_path}}" alt="{{image.title}}" class="img-responsive">
+        <p>{{image.title}}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

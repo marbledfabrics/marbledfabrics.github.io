@@ -27,21 +27,17 @@ images:
     title: Special Variety
 ---
 
-<section class="col-md-9 variety-packs">
+<section class="col-md-9 product-overview">
   <h1>{{page.title}}</h1>
+  <img src="img/variety/rainbowStones_LRG.jpg" class="pull-left img-responsive">
   <p>Each pack contains 10 pieces of marbled cotton, each approximately 9" X 10"</p>
   <div class="row">
     <!-- Loops through images -->
     {% for image in page.images %}
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-3 col-xs-6">
         <img src="{{image.image_path}}" alt="{{image.title}}" class="img-responsive">
+        <p>{{image.title}}</p>
       </div>
     {% endfor %}
-
-
   </div>
-
-
-
-
 </section>
