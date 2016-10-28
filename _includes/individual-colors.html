@@ -4,7 +4,7 @@
   <div class="row">
     {% for image in page.images %}
       <div class="col-md-4 col-sm-3 col-xs-6">
-        <a href="{{image.link}}"<p>{{image.title}}</p></a>
+        <p>{{image.title}}</p>
         <img src="{{image.image_path}}" class="img-responsive" alt="{{image.title}}">
       </div>
     {% endfor %}
