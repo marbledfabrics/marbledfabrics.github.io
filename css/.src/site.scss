@@ -148,14 +148,17 @@ h1 a {
   font-weight: bold;
 }
 
-.catalog .row a {
+.catalog .row a:nth-child(2) {
   color: #DFB579;
   font-weight: bold;
+  display: block;
+  margin-top: 3px;
 }
 
-.catalog .row a:nth-child(3) {
+.catalog .row a {
+  color: #DFB579;
   font-weight: normal;
-  display: block;
+  display: inline;
   font-size: 12px;
 }
 
@@ -197,8 +200,6 @@ h1 a {
 .individual-colors > .row:first-child div {
   text-align: center;
 }
-
-
 
 .individual-colors ul:first-child {
   list-style-type: none;
