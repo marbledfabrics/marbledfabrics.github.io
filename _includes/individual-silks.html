@@ -1,0 +1,28 @@
+<section class="col-md-9 individual-items">
+  <h1>{{page.title}}</h1>  
+  <img src="{{page.thumbnail}}" class="img-responsive">
+  <div class="row">
+    {% for image in page.images %}
+      <div class="col-md-4 col-sm-3 col-xs-6">
+        <p>{{image.title}}</p>
+        <img src="{{image.image_path}}" class="img-responsive" alt="{{image.title}}">
+      </div>
+    {% endfor %}
+  </div>
+  <div class="row">
+    <div class="col-md-12 pricing">
+      <ul>
+        <li>Price</li>
+        <ul>
+          <li>$70.00</li>
+        </ul>
+        <li>Print Size</li>
+        <ul>
+          <li>Small</li>
+          <li>Medium</li>
+          <li>Large</li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</section>
