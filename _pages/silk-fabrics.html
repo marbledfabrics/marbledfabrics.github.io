@@ -4,22 +4,31 @@ title: Silk Fabrics
 images:
   - image_path: img/fabrics/colors/blue-cat_LRG_0.jpg
     title: Blues and Teals
+    link: bluesandteals-silk.html
   - image_path: img/fabrics/colors/earthtones-cat_LRG_0.jpg
     title: Earthtones
+    link: earthtones-silk.html
   - image_path: img/fabrics/colors/fuchsia-cat_LRG_0.jpg 
     title: Fuschias
+    link: fuschias-silk.html
   - image_path: img/fabrics/colors/grey-cat_LRG_0.jpg
     title: Greys and Blacks
+    link: greysandblacks-silk.html
   - image_path: img/fabrics/colors/green-cat_LRG_0.jpg 
     title: Greens
+    link: greens-silk.html
   - image_path: img/fabrics/colors/orange-cat_LRG_0.jpg
     title: Oranges
+    link: oranges-silk.html
   - image_path: img/fabrics/colors/purple-cat_LRG_0.jpg 
     title: Purples
+    link: purples-silk.html
   - image_path: img/fabrics/colors/red-cat_LRG_0.jpg 
     title: Reds
+    link: reds-silk.html
   - image_path: img/fabrics/colors/yellow-cat_LRG_0.jpg 
     title: Yellows
+    link: yellows-silk.html
 permalink: silk-fabrics.html
 ---
 
@@ -32,8 +41,7 @@ permalink: silk-fabrics.html
     {% for image in page.images %}
       <div class="col-md-4 col-sm-3 col-xs-6">
         <img src="{{image.image_path}}" class="img-responsive" alt="{{image.title}}">
-        <p>{{image.title}}</p>
-      </div>
+        <a href="{{image.link}}"><p>{{image.title}}</p></a>      </div>
     {% endfor %}
   </div>
 </section>
