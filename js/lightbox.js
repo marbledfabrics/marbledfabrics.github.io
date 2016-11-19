@@ -1,17 +1,12 @@
 
-(function () {
+(function() {
 
-  var testArray = [];
-
-  $('.lightbox').each(function() {
-  var imgSrc = $(this).attr('src');
-  var fileName = imgSrc.split('/').pop();
-  testArray.push(fileName);
-})
-
-console.log(testArray);
-
-
+  $('.lightbox').click(function() {
+    var imgSrc = $(this).attr('src');
+    var fileName = imgSrc.split('/').pop();
+    
+    $('body').append('<div class="overlay"></div><div class="lightbox-content"><img src="img/full-size/' + fileName + '"></div>')
+  })
 
 })();
 
