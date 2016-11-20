@@ -253,6 +253,10 @@ h1 a, h1 a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.lightbox-content img {
+  border: 4px solid white;
+}
 img.lightbox {
   cursor: pointer;
 }
